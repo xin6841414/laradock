@@ -5,7 +5,7 @@
 ### Paths #################################################
 
 # Point to the path of your applications code on your host
-APP_CODE_PATH_HOST=../
+APP_CODE_PATH_HOST=../wwwroot
 
 # Point to where the `APP_CODE_PATH_HOST` should be in the container
 APP_CODE_PATH_CONTAINER=/var/www
@@ -38,7 +38,7 @@ COMPOSE_PROJECT_NAME=laradock
 ### PHP Version ###########################################
 
 # Select a PHP version of the Workspace and PHP-FPM containers (Does not apply to HHVM). Accepted values: 7.3 - 7.2 - 7.1 - 7.0 - 5.6
-PHP_VERSION=7.3
+PHP_VERSION=7.1
 
 ### Phalcon Version ###########################################
 
@@ -68,7 +68,7 @@ COMPOSE_CONVERT_WINDOWS_PATHS=1
 ### Environment ###########################################
 
 # If you need to change the sources (i.e. to China), set CHANGE_SOURCE to true
-CHANGE_SOURCE=false
+CHANGE_SOURCE=true
 
 ### Docker Sync ###########################################
 
@@ -86,7 +86,7 @@ WORKSPACE_COMPOSER_AUTH=false
 WORKSPACE_COMPOSER_REPO_PACKAGIST=
 WORKSPACE_INSTALL_NODE=true
 WORKSPACE_NODE_VERSION=node
-WORKSPACE_NPM_REGISTRY=
+WORKSPACE_NPM_REGISTRY=https://registry.npm.taobao.org
 WORKSPACE_INSTALL_YARN=true
 WORKSPACE_YARN_VERSION=latest
 WORKSPACE_INSTALL_NPM_GULP=true
@@ -130,7 +130,7 @@ WORKSPACE_INSTALL_TERRAFORM=false
 WORKSPACE_INSTALL_DUSK_DEPS=false
 WORKSPACE_INSTALL_PG_CLIENT=false
 WORKSPACE_INSTALL_PHALCON=false
-WORKSPACE_INSTALL_SWOOLE=false
+WORKSPACE_INSTALL_SWOOLE=true
 WORKSPACE_INSTALL_TAINT=false
 WORKSPACE_INSTALL_LIBPNG=false
 WORKSPACE_INSTALL_IONCUBE=false
@@ -143,7 +143,7 @@ WORKSPACE_INSTALL_MAILPARSE=false
 WORKSPACE_PUID=1000
 WORKSPACE_PGID=1000
 WORKSPACE_CHROME_DRIVER_VERSION=2.42
-WORKSPACE_TIMEZONE=UTC
+WORKSPACE_TIMEZONE=Asia/Shanghai
 WORKSPACE_SSH_PORT=2222
 WORKSPACE_INSTALL_FFMPEG=false
 WORKSPACE_INSTALL_GNU_PARALLEL=false
@@ -177,7 +177,7 @@ PHP_FPM_INSTALL_PGSQL=false
 PHP_FPM_INSTALL_GHOSTSCRIPT=false
 PHP_FPM_INSTALL_LDAP=false
 PHP_FPM_INSTALL_PHALCON=false
-PHP_FPM_INSTALL_SWOOLE=false
+PHP_FPM_INSTALL_SWOOLE=true
 PHP_FPM_INSTALL_TAINT=false
 PHP_FPM_INSTALL_PG_CLIENT=false
 PHP_FPM_INSTALL_POSTGIS=false
@@ -207,7 +207,7 @@ PHP_WORKER_INSTALL_ZIP_ARCHIVE=false
 PHP_WORKER_INSTALL_MYSQL_CLIENT=false
 PHP_WORKER_INSTALL_AMQP=false
 PHP_WORKER_INSTALL_GHOSTSCRIPT=false
-PHP_WORKER_INSTALL_SWOOLE=false
+PHP_WORKER_INSTALL_SWOOLE=true
 PHP_WORKER_INSTALL_TAINT=false
 PHP_WORKER_INSTALL_FFMPEG=false
 PHP_WORKER_INSTALL_GMP=false
@@ -246,7 +246,7 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+MYSQL_VERSION=5.7
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
