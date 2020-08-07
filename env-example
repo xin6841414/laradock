@@ -69,14 +69,9 @@ COMPOSE_CONVERT_WINDOWS_PATHS=1
 ### Environment ###########################################
 
 # If you need to change the sources (i.e. to China), set CHANGE_SOURCE to true
-<<<<<<< HEAD
-CHANGE_SOURCE=false
+CHANGE_SOURCE=true
 # Set CHANGE_SOURCE and UBUNTU_SOURCE option if you want to change the Ubuntu system sources.list file.
 UBUNTU_SOURCE=aliyun
-=======
-CHANGE_SOURCE=true
->>>>>>> 更新env部分设置添加node淘宝镜像
-
 ### Docker Sync ###########################################
 
 # If you are using Docker Sync. For `osx` use 'native_osx', for `windows` use 'unison', for `linux` docker-sync is not required
@@ -101,12 +96,8 @@ WORKSPACE_COMPOSER_REPO_PACKAGIST=
 WORKSPACE_NVM_NODEJS_ORG_MIRROR=
 WORKSPACE_INSTALL_NODE=true
 WORKSPACE_NODE_VERSION=node
-<<<<<<< HEAD
-WORKSPACE_NPM_REGISTRY=
-WORKSPACE_INSTALL_PNPM=false
-=======
 WORKSPACE_NPM_REGISTRY=https://registry.npm.taobao.org
->>>>>>> 更新env部分设置添加node淘宝镜像
+WORKSPACE_INSTALL_PNPM=false
 WORKSPACE_INSTALL_YARN=true
 WORKSPACE_YARN_VERSION=latest
 WORKSPACE_INSTALL_NPM_GULP=true
